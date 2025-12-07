@@ -1,0 +1,19 @@
+h1,h2{
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    font-family: "Electrolize", sans-serif;
+}
+nav{
+    background-image:url( https://wp.aulab.it/wp-content/uploads/2018/09/Cose-un-framework-nella-programmazione-web-cover-768x432-1.jpg ) ;
+    background-size: contain;
+    
+}
+ul{
+    background-color: yellow;
+    width: 56vh;
+}
+button:hover{
+    background-color: green;
+}
