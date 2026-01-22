@@ -1,10 +1,20 @@
-h1,h2{
-    color: brown;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+h1{
+    color: rgb(202, 18, 18);
+    font-size: 50px;
 }
 
+h2{
+    color: rgb(219, 54, 54);
+}
+    
+    
+
 *{
-    font-family: "Electrolize", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    margin: 0%;
 }
 
 .logoaulab{
@@ -12,6 +22,8 @@ h1,h2{
     height: 100px;
 }
 nav{
+    background-color:lch(2.43% 1.14 19.37 / 0.849); 
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +35,9 @@ nav{
 }
 
 .link{
-    margin: 10px;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
     
 }
 
@@ -78,4 +92,61 @@ button:hover{
     background-color: green;
 }
 
+footer{
+    background-color: rgb(37, 32, 32);
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    margin-top: 100px;
+}
+.imgicona{
+    width: 50px;
+    height: 50px;
+    animation-name: icona;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: fixed;
+    top: 80vh;
+}
+
+@keyframes icona{
+    0%{
+        transform: translate(50px);
+    }100%{
+        transform: translate(0%);
+    }
+}
+
+
+@media screen and (max-width: 670px) {
+    .listlink{
+        font-size: 8px;
+    }
+    .logoaulab{
+        width: 45px;
+        height: 45px;
+    }
+
+    .containerarticle{
+        display: block;
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        display: block;
+    }
+    main{
+        display: block;
+    }
+    article{
+        margin: 50px 8px;
+    }
+
+    footer{
+        display: block;
+    }
+    
+}
 
